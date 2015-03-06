@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><desc>Magic box - output file</desc><g transform='scale(2.83464567)'><path id="layer 1" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" fill-opacity="0.5" visibility="visible" d="m 0 0 h 100 l 2 2 v 50 l -2 2 h -100 l -2 -2 v -50 l 2 -2 " x="0" y="0" transform="scale(2,2) rotate(50,0,0) translate(100,0)">
+  <transforms>
+    <transform type="scale" x="0" y="0" angle="0" cx="0" cy="0" sx="2" sy="2"/>
+    <transform type="rotate" x="0" y="0" angle="50" cx="0" cy="0" sx="1" sy="1"/>
+    <transform type="translate" x="width" y="0" angle="0" cx="0" cy="0" sx="1" sy="1"/>
+  </transforms>
+</path><path id="layer 0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" fill-opacity="0.5" visibility="visible" d="m 0 0 h 100 l 2 2 v 50 l -2 2 h -100 l -2 -2 v -50 l 2 -2 " x="0" y="0" transform="">
+  <transforms/>
+</path></g></svg>

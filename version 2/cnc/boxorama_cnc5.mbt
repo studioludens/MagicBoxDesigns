@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parametricbox version="2.0">
+  <info>
+    <title>Box-O-Rama</title>
+    <id>magicbox.empty</id>
+    <author>Tal Erez</author>
+    <website>http://magic-box.org/</website>
+    <tutorial/>
+    <description>A default design</description>
+  </info>
+  <variables>
+    <variable name="boxes" title="Test List" value="{75,75,4,1,0},{1360,365,2,1,0},{825,180.25000000000006,5,1,0},{75,450.5,2,1,1},{449.99999999999994,300.50000000000006,4,1,0}" type="list"/>
+    <variable name="outline" type="list" min="0" max="100" value="{1555,962},{1480,962},{1480,740},{1285,740},{1285,555.25},{825,555.25},{825,675.5},{825,962},{750,962},{750,675.5},{374.99999999999994,675.5},{374.99999999999994,645.5},{75,645.5},{75,962},{0,962},{0,645.5},{0,375.5},{0,0},{449.99999999999994,0},{449.99999999999994,225.50000000000006},{750,225.50000000000006},{750,105.25000000000006},{1360,105.25000000000006},{1360,290},{1555,290},{1555,740},{1555,962}" showSettings="false"/>
+    <variable name="legs" type="list" min="0" max="100" value="{37.5,316.50000000000006},{1517.5,222.00000000000003},{787.5,286.50000000000006}" showSettings="false"/>
+    <variable name="holes" type="list" min="0" max="100" value="" showSettings="false"/>
+    <variable name="depth" type="stepper" min="0" max="700" value="400" showSettings="false"/>
+    <variable name="thickness" type="slider" min="0" max="30" value="12.042253521126762" showSettings="false"/>
+    <variable name="pf" type="slider" min="0" max="100" value="45"/>
+    <variable name="height" type="slider" min="0" max="1500" value="957.8313253012047" showSettings="false"/>
+    <variable name="leghole" type="slider" min="0" max="100" value="37.5" showSettings="false"/>
+    <variable name="bottomdistance" type="slider" min="0" max="100" value="25.833333333333336" showSettings="false"/>
+    <variable name="legthickness" type="slider" min="0" max="100" value="24.583333333333332" showSettings="false"/>
+    <variable name="width" type="slider" min="0" max="5000" value="1443.661971830986" showSettings="true"/>
+    <variable name="cnc_t" type="slider" min="0" max="100" value="6.7164179104477615"/>
+  </variables>
+  <layers>
+    <path id="dogbone_defs" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="#888888" fill-opacity="0.5" visibility="visible" d="" mb_x="0" mb_y="0" mb_d="# horizontal cnc dogbone function&#xA;define h_dogbone ( width, hdir, vdir, thickness, indent )&#xA;[&#xA;&#xA; # calculate the relative movement along the x and y axis&#xA; set cnc_t_move (sin(45)*thickness)&#xA; set cnc_i_move (sin(45)*indent)&#xA;&#xA; # right side has dogbone&#xA; if( hdir > 0 )[&#xA;  h width-cnc_t_move&#xA;  l cnc_i_move -cnc_i_move*vdir&#xA;  l cnc_t_move/2 cnc_t_move/2*vdir&#xA; ] &#xA; # left side has dogbone&#xA; if( hdir &lt; 0 )[&#xA;  l cnc_t_move/2 -cnc_t_move/2*vdir&#xA;  l cnc_i_move cnc_i_move*vdir&#xA;  h width-cnc_t_move&#xA; ]&#xA; # both sides have dogbones&#xA; if( hdir == 0 )[&#xA;  l cnc_t_move/2 -cnc_t_move/2*vdir&#xA;  l cnc_i_move cnc_i_move*vdir&#xA;  h width-cnc_t_move&#xA;  l cnc_i_move -cnc_i_move*vdir&#xA;  l cnc_t_move/2 cnc_t_move/2*vdir&#xA; ]&#xA;]&#xA;&#xA;# vertical dogbone function&#xA;define v_dogbone ( height, vdir, hdir, thickness, indent )&#xA;[&#xA;&#xA; # calculate the relative movement along the x and y axis&#xA; set cnc_t_move (sin(45)*thickness)&#xA; set cnc_i_move (sin(45)*indent)&#xA;&#xA; # bottom side has dogbone&#xA; if( vdir > 0 )[&#xA;  v height-cnc_t_move&#xA;  l cnc_i_move cnc_i_move*hdir&#xA;  l -cnc_t_move/2 cnc_t_move/2*hdir&#xA; ] &#xA; # top side has dogbone&#xA; if( vdir &lt; 0 )[&#xA;  l cnc_t_move/2 cnc_t_move/2*hdir&#xA;  l -cnc_i_move cnc_i_move*hdir&#xA;  v height-cnc_t_move&#xA; ]&#xA; # both sides have dogbones&#xA; if( vdir == 0 )[&#xA;  l cnc_t_move/2 cnc_t_move/2*hdir&#xA;  l -cnc_i_move cnc_i_move*hdir&#xA;  v height-cnc_t_move&#xA;  l cnc_i_move cnc_i_move*hdir&#xA;  l -cnc_t_move/2 cnc_t_move/2*hdir&#xA; ]&#xA;]" mb_stroke="#DDDDDD" mb_strokeWidth="1" mb_strokeOpacity="1" mb_fill="#888888" mb_fillOpacity="0.5" mb_visibility="visible" mb__showStroke="true" mb__showFill="false" mb__showTransform="false">
+      <transforms/>
+    </path>
+    <path id="pressfit_defs" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="#888888" fill-opacity="0.5" visibility="visible" d="" mb_x="0" mb_y="0" mb_d="set pf_v&#xA;{{15,30,15},&#xA;{12,30,36,30,12},&#xA;{12,30,12,30,32,30,12,30,12},&#xA;{12,30,12,30,30,30,12,30,30,30,12,30,12},{12,30,40,30,12,30,40,30,12,30,40,30,12,30,40,30,12}, {18,30,43.2,30,12,30,43.2,30,12,30,43.2,30,12,30,43.2,30,12,30,43.2,30,18}&#xA;}&#xA;&#xA;set pf_widths {84,144,224,324,484,666}&#xA;&#xA;&#xA;set pf_h {18,40,30,12,30,40,30,12,30,40,18}&#xA;&#xA;# total: 400&#xA;set pf_d&#xA;{33,18,45,50,45,18,45,50,45,18,33}&#xA;&#xA;define pfh (list, scalingx, scalingy,xdir, ydir)[&#xA;# display horizontal press-fit&#xA;# with cnc dogbone&#xA;&#xA;  set i 0&#xA;  each list [&#xA;    if( i % 2 == 0) [&#xA;      if( i != 0 ) [&#xA;        v -thickness*scalingy*ydir&#xA;        &#xA;      ]&#xA;    ] else [&#xA;      v thickness*scalingy*ydir&#xA;    ]&#xA;&#xA;    # check if it's the top or bottom one&#xA;    if( i % 2 == 1) [&#xA;      h $*scalingx*xdir&#xA;    ] else [&#xA;      h $*scalingx*xdir&#xA;    ]&#xA;    set i i+1&#xA;  ]&#xA;&#xA;&#xA;]&#xA;&#xA;define pfv (list, scalingx, scalingy, xdir, ydir)[&#xA;&#xA;&#xA;# display vertical press-fit&#xA;set i 0&#xA;&#xA;&#xA;each list [&#xA;  if( i % 2 == 0) [&#xA;    if( i != 0 ) [&#xA;      h_dogbone thickness*scalingx*xdir 1 -1 cnc_t*xdir cnc_t*xdir&#xA;    ]&#xA;  ] else [&#xA;     h_dogbone thickness*scalingx*xdir 1 -1 cnc_t*xdir cnc_t*xdir&#xA;  ]&#xA;&#xA;# check if it's the top or bottom one&#xA;    if( i % 2 == 0) [&#xA;      v_dogbone $*ydir*scalingy 0 -1 -cnc_t*ydir -cnc_t*ydir&#xA;      #v $*scalingy*ydir&#xA;    ] else [&#xA;      v $*scalingy*ydir&#xA;    ]&#xA;  #&#xA;  set i i+1&#xA;]&#xA;&#xA;]" mb_stroke="#000000" mb_strokeWidth="1" mb_strokeOpacity="1" mb_fill="#888888" mb_fillOpacity="0.5" mb_visibility="visible" mb__showStroke="true" mb__showFill="false" mb__showTransform="false" mb__staticData="false">
+      <transforms/>
+    </path>
+    <path id="front" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="#888888" fill-opacity="0.5" visibility="visible" d="" mb_x="0" mb_y="0" mb_d="poly outline&#xA;&#xA;# cutouts&#xA;each boxes [&#xA; M $.1 $.2&#xA; &#xA;&#xA; set item $.3&#xA; set list pf_v.item&#xA; set direction $.5&#xA; set scaling $.4&#xA;&#xA; m -thickness*scaling -thickness*scaling&#xA; set ts scaling*thickness &#xA;&#xA; if( direction == 1 ) [&#xA; &#xA; v ts&#xA; h ts&#xA; pfv list scaling scaling 1 1&#xA; h -ts&#xA; v ts&#xA;&#xA; h ts&#xA; pfh pf_h scaling scaling 1 -1&#xA; h ts&#xA;&#xA; v -ts&#xA; h -ts &#xA; pfv list scaling scaling -1 -1&#xA; h ts&#xA; v -ts &#xA;&#xA; h -ts&#xA; pfh pf_h scaling scaling -1 1&#xA; h -ts&#xA; &#xA;&#xA; ] else [ # rotated&#xA; &#xA; v ts&#xA; pfv pf_h scaling scaling -1 1&#xA; v ts&#xA;&#xA; h ts&#xA; v -ts&#xA; pfh list scaling scaling 1 1&#xA; v ts&#xA; h ts&#xA; &#xA; v -ts&#xA; pfv pf_h scaling scaling 1 -1&#xA; v -ts&#xA;&#xA; h -ts&#xA; v ts&#xA; pfh list scaling scaling -1 -1&#xA; v -ts&#xA; h -ts&#xA; ]&#xA;]&#xA;&#xA;# holes&#xA;M  0 0&#xA;each holes [&#xA; poly $&#xA;]&#xA;&#xA;# leg holes&#xA;&#xA;each legs [&#xA; set legheight $.2&#xA; M $.1 height-legheight*.666&#xA; rect thickness leghole CENTER 0&#xA; &#xA; # and a rectangle at the bottom&#xA; M $.1 height-bottomdistance-leghole*.5&#xA; rect thickness leghole CENTER 0&#xA;]&#xA;&#xA;" mb_stroke="#000000" mb_strokeWidth="0" mb_strokeOpacity="1" mb_fill="#999999" mb_fillOpacity="1" mb_visibility="visible" mb__showStroke="true" mb__showFill="true" mb__showTransform="false">
+      <transforms/>
+    </path>
+    <path id="boxes" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="#888888" fill-opacity="0.5" visibility="visible" d="" mb_x="0" mb_y="0" mb_d="" mb_stroke="#000000" mb_strokeWidth="1" mb_strokeOpacity="1" mb_fill="#999999" mb_fillOpacity="1" mb_visibility="visible" mb__showStroke="true" mb__showFill="true" mb__showTransform="true">
+      <transforms>
+        <transform type="translate" x="0" y="height+300" angle="0" cx="0" cy="0" sx="1" sy="1"/>
+      </transforms>
+    </path>
+  </layers>
+</parametricbox>

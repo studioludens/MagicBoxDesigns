@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parametricbox version="2.0">
+  <info>
+    <info>
+      <title>Magic Box Design</title>
+      <id>magicbox.empty</id>
+      <author/>
+      <website>http://magic-box.org/</website>
+      <tutorial/>
+      <description>A default design</description>
+    </info>
+    <info>http://magic-box.org/</info>
+    <info>A default design</info>
+  </info>
+  <variables>
+    <variable name="pf" type="slider" min="0" max="100" value="0"/>
+    <variable name="width_steps" type="stepper" min="1" max="30" value="6" showSettings="false"/>
+    <variable name="height_steps" type="slider" min="0" max="100" value="10"/>
+    <variable name="thickness" type="slider" min="0" max="100" value="70.2247191011236"/>
+    <variable name="pf_first" type="slider" min="0" max="100" value="29.775280898876403"/>
+    <variable name="pf_second" type="slider" min="0" max="100" value="10"/>
+    <variable name="textHeight" type="slider" min="0" max="100" value="9.55056179775281" showSettings="false"/>
+  </variables>
+  <layers>
+    <text mb_x="0" mb_y="-textHeight" mb_fill="#888888" mb_opacity="1" mb_visibility="visible" mb_fontSize="37" mb_fontFamily="Arial" mb__showFill="true" mb__showStroke="false" mb__text="This is a press-fit construction" id="text 1">
+      <transforms/>
+    </text>
+    <path id="pressfit" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="#888888" fill-opacity="0.5" visibility="visible" d="" mb_x="0" mb_y="0" mb_d="&#xD;repeat width_steps [&#xD;h pf_first-pf&#xD;v thickness&#xD;h pf_first+pf&#xD;v -thickness&#xD;h pf_second&#xD;v thickness&#xD;h pf_second&#xD;v -thickness&#xD;]" mb_stroke="#DDDDDD" mb_strokeWidth="1" mb_strokeOpacity="1" mb_fill="#888888" mb_fillOpacity="0.5" mb_visibility="visible" mb__showStroke="true" mb__showFill="false">
+      <transforms/>
+    </path>
+  </layers>
+</parametricbox>

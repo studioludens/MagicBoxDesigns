@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<desc>Magic box - output file</desc>
+<g transform='scale(2.83464567)'>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="">
+  <text x="70" y="130" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="70" dy="0">Velcro width 2cm</tspan>
+  </text>
+  <rect x="0" y="0" width="50" height="50" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="#663300" fill-opacity="0.4782608695652174" visibility="visible" transform=""/>
+  <text x="70" y="40" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="70" dy="0">Velcro inside width 2cm</tspan>
+  </text>
+  <rect x="0" y="90" width="50" height="50" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="#ffff00" fill-opacity="0.4891304347826087" visibility="visible" transform=""/>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(771.1445783132531,400)">
+  <rect x="0" y="0" width="590.289156626506" height="254" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="0" dy="0">5. front frame top</tspan>
+  </text>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(711.1445783132531,0)">
+  <rect x="50" y="310" width="602.289156626506" height="20" stroke="#DDDDDD" stroke-width="1" stroke-opacity="0" fill="#ffff00" fill-opacity="0.5" visibility="visible" transform=""/>
+  <path x="0" y="0" d="m 0 0 h 702.289156626506 v 254 h -50 v 75 h -602.289156626506 v -75 h -50 v -254 " stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="0" dy="0">6. Front Frame Bottom</tspan>
+    <tspan x="0" dy="40"/>
+  </text>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(0,750)">
+  <rect x="0" y="0" width="295.144578313253" height="948.7710843373493" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="0" dy="0">3. Door</tspan>
+  </text>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(451.144578313253,750)">
+  <rect x="0" y="0" width="56" height="955.7710843373493" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="0" dy="0">4. Front Frame sides</tspan>
+  </text>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(701.1445783132531,750)">
+  <path x="0" y="0" d="m 0 0 h 702.289156626506 v 1112.8915662650602 h -50 v 75 h -602.289156626506 v -75 h -50 v -1112.8915662650602 " stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="translate(300,0)">
+    <tspan x="0" dy="0">1. Back</tspan>
+    <tspan x="0" dy="40"/>
+  </text>
+  <rect x="55" y="1117.8915662650602" width="592.289156626506" height="20" stroke="#DDDDDD" stroke-width="3" stroke-opacity="0" fill="#663300" fill-opacity="0.5" visibility="visible" transform=""/>
+  <rect x="10" y="10" width="682.289156626506" height="20" stroke="#DDDDDD" stroke-width="3" stroke-opacity="0" fill="#663300" fill-opacity="0.5" visibility="visible" transform=""/>
+  <rect x="55" y="1167.8915662650602" width="592.289156626506" height="20" stroke="#DDDDDD" stroke-width="3" stroke-opacity="0" fill="#ffff00" fill-opacity="0.5" visibility="visible" transform=""/>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(761.1445783132531,2062.89156626506)">
+  <rect x="10" y="468.9759036144578" width="582.289156626506" height="20" stroke="#DDDDDD" stroke-width="3" stroke-opacity="0" fill="#663300" fill-opacity="0.5" visibility="visible" transform=""/>
+  <rect x="0" y="0" width="592.289156626506" height="493.9759036144578" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="0" dy="0">5a. Inside Top</tspan>
+    <tspan x="0" dy="40"/>
+  </text>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(711.1445783132531,2656.867469879518)">
+  <rect x="10" y="468.9759036144578" width="682.289156626506" height="20" stroke="#DDDDDD" stroke-width="3" stroke-opacity="0" fill="#663300" fill-opacity="0.5" visibility="visible" transform=""/>
+  <rect x="0" y="0" width="702.289156626506" height="493.9759036144578" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <rect x="10" y="468.9759036144578" width="682.289156626506" height="20" stroke="#DDDDDD" stroke-width="3" stroke-opacity="0" fill="#663300" fill-opacity="0.5" visibility="visible" transform=""/>
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="0" dy="0">4a. Inside Bottom</tspan>
+    <tspan x="0" dy="40"/>
+  </text>
+</g>
+<g x="0" y="0" stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform="translate(1503.433734939759,0)">
+  <text x="0" y="0" fill="#888888" opacity="1" visibility="visible" font-size="40" font-family="Arial" text-anchor="start" transform="">
+    <tspan x="0" dy="0">2. side (half)</tspan>
+  </text>
+  <path x="0" y="0" d="m 0 0 m 123.49397590361446 10 v 50 h 246.9879518072289 v -50 " stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <path x="0" y="0" d="m 0 0 h 493.9759036144578 v 1433.9156626506024 h -50 v 371.144578313253 h -393.9759036144578 v -371.144578313253 h -50 v -1433.9156626506024 " stroke="#DDDDDD" stroke-width="1" stroke-opacity="1" fill="none" visibility="visible" transform=""/>
+  <rect x="50" y="1785.0602409638554" width="393.9759036144578" height="20" stroke="#DDDDDD" stroke-width="1" stroke-opacity="0" fill="#ffff00" fill-opacity="0.5" visibility="visible" transform=""/>
+  <rect x="50" y="1433.9156626506024" width="20" height="351.144578313253" stroke="#DDDDDD" stroke-width="1" stroke-opacity="0" fill="#ffff00" fill-opacity="0.5" visibility="visible" transform=""/>
+  <rect x="423.9759036144578" y="1433.9156626506024" width="20" height="351.144578313253" stroke="#DDDDDD" stroke-width="1" stroke-opacity="0" fill="#ffff00" fill-opacity="0.5" visibility="visible" transform=""/>
+</g>
+</g></svg>
